@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mock Verification UI</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Roboto, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(180deg, #2d1b8e 0%, #3a3fc0 35%, #1fa6c9 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            padding: 30px 0;
+        }
+
+        .phone {
+            width: 380px;
+        }
+
+        .photo-wrap {
+            display: flex;
+            justify-content: center;
+            margin: 30px 0 20px;
+        }
+
+        .photo {
+            width: 130px;
+            height: 150px;
+            background: #ccc;
+            border: 2px solid #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #666;
+            font-size: 12px;
+            text-align: center;
+        }
+
+        .verified-box {
+            background: #fff;
+            border-radius: 14px;
+            margin: 0 20px 20px;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+
+        .check {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background: #2ecc71;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            flex-shrink: 0;
+        }
+
+        .verified-box span {
+            font-weight: 700;
+            font-size: 17px;
+            color: #222;
+        }
+
+        .details {
+            background: #fff;
+            border-radius: 14px;
+            margin: 0 20px;
+            padding: 24px 20px;
+        }
+
+        .row {
+            display: flex;
+            margin-bottom: 18px;
+            font-size: 14px;
+        }
+
+        .label {
+            width: 110px;
+            color: #555;
+            letter-spacing: 0.5px;
+            flex-shrink: 0;
+        }
+
+        .colon {
+            width: 14px;
+        }
+
+        .value {
+            font-weight: 700;
+            color: #111;
+        }
+
+        .reset {
+            display: block;
+            margin: 30px auto 0;
+            background: #4f3fd9;
+            color: #fff;
+            border: none;
+            padding: 14px 50px;
+            border-radius: 10px;
+            font-size: 15px;
+            letter-spacing: 1px;
+            font-weight: 600;
+        }
+
+        .placeholder-tag {
+            text-align: center;
+            color: #fff;
+            font-size: 12px;
+            opacity: 0.8;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="phone">
+
+        <div class="photo-wrap">
+            <img src="p.jpeg" style="width:130px; height:150px; object-fit:cover;">
+        </div>
+
+        <div class="verified-box">
+            <div class="check">✓</div>
+            <span>SAMPLE DATA VERIFIED</span>
+        </div>
+
+        <div class="details">
+            <div class="row">
+                <div class="label">ID NUMBER</div>
+                <div class="colon">:</div>
+                <div class="value">XXXX XXXX 4214</div>
+            </div>
+            <div class="row">
+                <div class="label">DATA AS ON</div>
+                <div class="colon">:</div>
+                <div class="value">26/06/2026&nbsp;&nbsp;12:00 pm</div>
+            </div>
+            <div class="row">
+                <div class="label">NAME</div>
+                <div class="colon">:</div>
+                <div class="value">Harishkumar R</div>
+            </div>
+            <div class="row">
+                <div class="label">GENDER</div>
+                <div class="colon">:</div>
+                <div class="value">M</div>
+            </div>
+            <div class="row">
+                <div class="label">DOB</div>
+                <div class="colon">:</div>
+                <div class="value">07-08-2007</div>
+            </div>
+            <div class="row">
+                <div class="label">MOBILE</div>
+                <div class="colon">:</div>
+                <div class="value">XXXXXX5205</div>
+            </div>
+            <div class="row">
+                <div class="label">EMAIL</div>
+                <div class="colon">:</div>
+                <div class="value">No email address available</div>
+            </div>
+            <div class="row">
+                <div class="label">ADDRESS</div>
+                <div class="colon">:</div>
+                <div class="value">S/O Rajendiran, No.170A, Bairavan Vattam,<br>Katteri, Pakkirithakka,
+                    Tirupattur,<br>Tamil Nadu - 635853.</div>
+            </div>
+        </div>
+
+        <button class="reset">RESET</button>
+
+
+    </div>
+</body>
+
+</html>
